@@ -9,4 +9,3 @@ $statement->bindParam(":id", $id);
 $statement->execute();
 
 header('Location: /');
-
