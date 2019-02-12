@@ -7,7 +7,7 @@ $data = [
 ];
 
 $pdo = new PDO("mysql:host=localhost; dbname=test", "root", "");
-$sql = 'UPDATE tasks SET title=:title, content WHERE id=:id';
+$sql = 'UPDATE tasks SET title=:title, content=:content WHERE id=:id';
 $statement = $pdo->prepare($sql);
 $statement->execute($data);
 
